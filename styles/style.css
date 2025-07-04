@@ -1,5 +1,41 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. Это стили для темы, 
+которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    /* сохраните в разметке и стилях класс 
+  page у тега body. Он удобен, 
+  чтобы составлять селекторы для 
+  разных цветовых тем. */
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto-fit;
+    /* возможно потребуется заменить на auto-fill */
+}
+
+.header {
+    height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
+    min-height: 668px; /* меньше этого значения высоте быть нельзя*/
+}
+
+.decorated {
+    justify-self: flex-end;
+    margin-top: 10px;
+    margin-right: 19px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #ff0070;
+    text-transform: uppercase;
+}
+
+.decorated::after {
+    content: url(/images/Ellipse.png);
+    vertical-align: sub;
 }
