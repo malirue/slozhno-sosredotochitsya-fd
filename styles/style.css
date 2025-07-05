@@ -18,14 +18,17 @@
 }
 
 .header {
+    display: grid;
     height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
     min-height: 668px; /* меньше этого значения высоте быть нельзя*/
+    align-content: stretch;
+    align-items: baseline;
 }
 
 .decorated {
     justify-self: flex-end;
-    margin-top: 10px;
-    margin-right: 19px;
+    margin-block-start: 10px;
+    margin-inline-end: 19px;
     font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 18px;
@@ -38,4 +41,46 @@
 .decorated::after {
     content: url(/images/Ellipse.png);
     vertical-align: sub;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-inline-end: 10px;
+    gap: 10px;
+}
+
+.header__theme-menu-button {
+    font-family: var(--font-family);
+    font-weight: var(--button-font-weight);
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    color: var(--button-color);
+    text-align: center;
+    background-color: transparent;
+    border-style: none;
+    /*надо стилизовать состояния и 
+    поставить внутренний padding 
+    + залить всё под светую тему*/
+}
+
+.header-title {
+    font-family: var(--font-family);
+    font-weight: var(--header-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--title-text-color);
+    text-shadow: var(--text-shadow);
+}
+
+.header-subtitle {
+    background-color: var(--subtitle-background-color);
+    font-family: var(--font-family);
+    font-weight: var(--header-font-weight);
+    font-size: var(--subtitle-font-size);
+    line-height: var(--subtitle-line-height);
+    color: var(--subtitle-text-color);
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
