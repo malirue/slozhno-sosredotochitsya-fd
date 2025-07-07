@@ -13,19 +13,21 @@
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
     --text-shadow: 4px 4px var(--accent-color);
-    --button-font-weight: 400;
+    --title-font-weight: 700;
     /*кнопки*/
-    --button-font-size: 18px;
     --button-line-height: 18px;
     --button-border-color: #ff0070;
     --button-outline-color: #FF007066;
     --button-change-plase-outline: 1px solid var(--button-border-color);
     /*стили header*/
-    --header-font-weight: 700;
-    --title-font-size: 116px;
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --title-line-height: 83%;
     --title-text-color: #db00ff;
-    --subtitle-font-size: 18px;
-    --subtitle-line-height: 23.4px;
-    --subtitle-text-color: #000028;
+    /*основной текст*/
+    --main-text-font-size: 18px;
+    --main-text-font-weight: 400;
+    --main-text-line-height: 23.4px;
+    --main-text-color: #000028;
+    --content-section-title-text-color: #FF0070;
+    --paragraph-text-color: #F1B2CE;
 }

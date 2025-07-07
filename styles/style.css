@@ -15,6 +15,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto-fit;
     /* возможно потребуется заменить на auto-fill */
+    gap: 40px;
+}
+
+/*общий класс для всех обсластей с акцентным цветом*/
+.title-decor {
+    background-color: var(--accent-color);
 }
 
 .header {
@@ -46,7 +52,7 @@
 }
 
 .header__theme-menu {
-  margin-block-start: 75px;
+    margin-block-start: 75px;
 }
 
 .header__theme-menu-list {
@@ -59,8 +65,8 @@
 
 .header__theme-menu-button {
     font-family: var(--font-family);
-    font-weight: var(--button-font-weight);
-    font-size: var(--button-font-size);
+    font-weight: var(--main-text-font-weight);
+    font-size: var(--main-text-font-size);
     line-height: var(--button-line-height);
     color: var(--accent-color);
     text-align: center;
@@ -95,7 +101,7 @@
 
 .header-title {
     font-family: var(--font-family);
-    font-weight: var(--header-font-weight);
+    font-weight: var(--title-font-weight);
     font-size: var(--title-font-size);
     line-height: var(--title-line-height);
     color: var(--title-text-color);
@@ -103,12 +109,70 @@
 }
 
 .header-subtitle {
-    background-color: var(--accent-color);
     font-family: var(--font-family);
-    font-weight: var(--header-font-weight);
-    font-size: var(--subtitle-font-size);
-    line-height: var(--subtitle-line-height);
-    color: var(--subtitle-text-color);
+    font-weight: var(--title-font-weight);
+    font-size: var(--main-text-font-size);
+    line-height: var(--main-text-line-height);
+    color: var(--main-text-color);
     margin-inline-start: 10px;
     margin-inline-end: 10px;
 }
+
+.content {
+    display: grid;
+    gap: 50px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+.content-section {
+    display: grid;
+    gap: 20px;
+    font-family: var(--font-family);
+    font-weight: var(--main-text-font-weight);
+    font-size: var(--main-text-font-size);
+    line-height: var(--main-text-line-height);
+}
+
+.content-section-chapter {
+    display: grid;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: var(--title-font-weight);
+    font-size: var(--main-text-font-size);
+    color: var(--content-section-title-text-color);
+}
+
+h2 {
+    font-weight: var(--title-font-weight);
+    font-size: var(--main-text-font-size);
+    color: var(--main-text-color);
+    margin-block-end: 9px;
+}
+
+h3 {
+    font-weight: var(--main-text-font-weight);
+    font-size: var(--main-text-font-size);
+    color: var(--main-text-color);
+    /* margin-block-start: 10px; */
+    margin-block-end: 9px;
+}
+
+p {
+    color: var(--paragraph-text-color);
+}
+
+.gallery {
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery-image {
+  
+  object-fit: cover;
+}
+
+@container (w <=)
