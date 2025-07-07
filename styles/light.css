@@ -6,15 +6,35 @@
 */
 
 :root.theme-light {
+    /*общее*/
     --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
+    --accent-color: #FF8DCB;
+    --decor: hidden;
+    --visibility: false;
+    /*общая типографика*/
+    --font-family: "IBM Plex Mono";
+    --text-shadow: 4px 4px var(--accent-color);
+    --button-font-weight: 400;
+    /*кнопки*/
+    --button-font-size: 18px;
+    --button-line-height: 18px;
+    --button-border-color: #353430;
+    --button-outline-color: #32312D66;
+    --button-change-plase-outline: initial;
+    /*стили header*/
+    --header-font-weight: 700;
+    --title-font-size: 116px;
+    --title-line-height: 83%;
+    --title-text-color: #FFC2E6;
+    --subtitle-font-size: 18px;
+    --subtitle-line-height: 23.4px;
+    --subtitle-text-color: #353430;
 
     .decorated {
       display: none;
     }
 
-    .header__theme-menu {
-      
     }
     /* сохраните этот селектор в приведённом 
   виде.
@@ -28,3 +48,4 @@
     /* Вам также нужно будет написать ряд 
   подобных селекторов */
 }
+

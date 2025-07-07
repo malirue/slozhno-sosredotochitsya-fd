@@ -4,22 +4,27 @@
 */
 
 :root.theme-dark {
+    /*общее*/
     --background-image: url(../images/cover-image-dark.png);
     --background-color: #000028;
+    --accent-color: #ff0070;
+    --decor: visible;
+    --visibility: true;
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
-    --text-shadow: 4px 4px #ff0070;
+    --text-shadow: 4px 4px var(--accent-color);
     --button-font-weight: 400;
     /*кнопки*/
     --button-font-size: 18px;
     --button-line-height: 18px;
-    --button-color: #ff0070;
+    --button-border-color: #ff0070;
+    --button-outline-color: #FF007066;
+    --button-change-plase-outline: 1px solid var(--button-border-color);
     /*стили header*/
     --header-font-weight: 700;
     --title-font-size: 116px;
     --title-line-height: 83%;
     --title-text-color: #db00ff;
-    --subtitle-background-color: #ff0070;
     --subtitle-font-size: 18px;
     --subtitle-line-height: 23.4px;
     --subtitle-text-color: #000028;

@@ -26,21 +26,27 @@
 }
 
 .decorated {
+    visibility: var(--decor);
+    position: absolute;
     justify-self: flex-end;
     margin-block-start: 10px;
     margin-inline-end: 19px;
-    font-family: "IBM Plex Mono";
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: #ff0070;
+    color: var(--accent-color);
     text-transform: uppercase;
 }
 
 .decorated::after {
     content: url(/images/Ellipse.png);
     vertical-align: sub;
+}
+
+.header__theme-menu {
+  margin-block-start: 75px;
 }
 
 .header__theme-menu-list {
@@ -56,13 +62,35 @@
     font-weight: var(--button-font-weight);
     font-size: var(--button-font-size);
     line-height: var(--button-line-height);
-    color: var(--button-color);
+    color: var(--accent-color);
     text-align: center;
     background-color: transparent;
     border-style: none;
-    /*надо стилизовать состояния и 
-    поставить внутренний padding 
-    + залить всё под светую тему*/
+    line-height: 25px;
+    padding: 0 25px 0 25px;
+}
+
+.header__theme-menu-button:hover {
+    outline: 1px solid var(--button-outline-color);
+}
+
+.header__theme-menu-button:focus {
+    outline: initial;
+    border-bottom: 1px solid var(--button-border-color);
+    margin-bottom: -1px;
+    /*сделала отрицательный margin чтобы 
+  не прыгал, но не получилось возможно 
+  сработает при других условиях*/
+}
+
+.header__theme-menu-button:focus-visible {
+    outline: initial;
+    border-bottom: 1px solid var(--button-border-color);
+    margin-bottom: -1px;
+}
+
+.header__theme-menu-button_type_dark {
+    outline: var(--button-change-plase-outline);
 }
 
 .header-title {
@@ -75,7 +103,7 @@
 }
 
 .header-subtitle {
-    background-color: var(--subtitle-background-color);
+    background-color: var(--accent-color);
     font-family: var(--font-family);
     font-weight: var(--header-font-weight);
     font-size: var(--subtitle-font-size);
