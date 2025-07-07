@@ -17,7 +17,7 @@
     /*кнопки*/
     --button-line-height: 18px;
     --button-border-color: #ff0070;
-    --button-outline-color: #FF007066;
+    --button-outline-color: #ff007066;
     --button-change-plase-outline: 1px solid var(--button-border-color);
     /*стили header*/
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -28,6 +28,6 @@
     --main-text-font-weight: 400;
     --main-text-line-height: 23.4px;
     --main-text-color: #000028;
-    --content-section-title-text-color: #FF0070;
-    --paragraph-text-color: #F1B2CE;
+    --content-section-title-text-color: #ff0070;
+    --paragraph-text-color: #f1b2ce;
 }
