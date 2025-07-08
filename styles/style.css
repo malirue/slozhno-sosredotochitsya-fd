@@ -135,7 +135,7 @@
     outline: var(--button-change-plase-outline);
 }
 
-.header-title {
+.header__title {
     font-family: var(--font-family);
     font-weight: var(--title-font-weight);
     font-size: var(--main-text-font-size);
@@ -152,7 +152,7 @@
     padding-inline-end: 10px;
 }
 
-.content-section {
+.content__section {
     display: grid;
     gap: 20px;
     font-family: var(--font-family);
@@ -161,7 +161,7 @@
     line-height: var(--main-text-line-height);
 }
 
-.content-section-chapter {
+.content__section-chapter {
     display: grid;
     flex-direction: column;
 }
