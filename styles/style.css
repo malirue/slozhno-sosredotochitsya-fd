@@ -18,41 +18,49 @@
     gap: 40px;
 }
 
-/*общий класс для всех обсластей с акцентным цветом*/
+/*класс для ссылок*/
+
+.link {
+    border: initial;
+    text-decoration: none;
+    text-shadow: var(--link-text-shadow);
+}
+
+.link:hover {
+    border-bottom: 1px solid var(--paragraph-text-color);
+}
+
+.link:focus {
+    outline: initial;
+    outline: 1px solid var(--link-outline-color);
+}
+
+.link:focus-visible {
+    outline: initial;
+    outline: 1px solid var(--link-outline-color);
+}
+
+/*все обсласти с акцентным цветом*/
+
 .title-decor {
     background-color: var(--accent-color);
 }
 
-.link {
-  border: initial;
-  text-decoration: none;
-  text-shadow: var(--link-text-shadow);
+/* декоративный заголовок в header и footer*/
+
+.decorated-title {
+    font-family: var(--font-family);
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--title-text-color);
+    text-shadow: var(--header-decorated-text-shadow);
 }
 
-.link:hover {
-  border-bottom: 1px solid var(--paragraph-text-color);
-}
+/*декоративный элемент "Лампочка"*/
 
-.link:focus {
-  outline: initial;
-  outline: 1px solid var(--link-outline-color);
-}
-
-.link:focus-visible {
-  outline: initial;
-  outline: 1px solid var(--link-outline-color);
-}
-
-.header {
-    display: grid;
-    height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
-    min-height: 668px; /* меньше этого значения высоте быть нельзя*/
-    align-content: stretch;
-    align-items: baseline;
-}
-
-.decorated {
-    visibility: var(--decor);
+.decorated-element {
+    visibility: var(--decorated-element-visibility);
     position: absolute;
     justify-self: flex-end;
     margin-block-start: 10px;
@@ -66,9 +74,17 @@
     text-transform: uppercase;
 }
 
-.decorated::after {
+.decorated-element::after {
     content: url(/images/Ellipse.png);
     vertical-align: sub;
+}
+
+.header {
+    display: grid;
+    height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
+    min-height: 668px; /* меньше этого значения высоте быть нельзя*/
+    align-content: stretch;
+    align-items: baseline;
 }
 
 .header__theme-menu {
@@ -122,15 +138,6 @@
 .header-title {
     font-family: var(--font-family);
     font-weight: var(--title-font-weight);
-    font-size: var(--title-font-size);
-    line-height: var(--title-line-height);
-    color: var(--title-text-color);
-    text-shadow: var(--text-shadow);
-}
-
-.header-subtitle {
-    font-family: var(--font-family);
-    font-weight: var(--title-font-weight);
     font-size: var(--main-text-font-size);
     line-height: var(--main-text-line-height);
     color: var(--main-text-color);
@@ -159,20 +166,20 @@
     flex-direction: column;
 }
 
-h1 {
+h2 {
     font-weight: var(--title-font-weight);
     font-size: var(--main-text-font-size);
     color: var(--content-section-title-text-color);
 }
 
-h2 {
+h3 {
     font-weight: var(--title-font-weight);
     font-size: var(--main-text-font-size);
     color: var(--main-text-color);
     margin-block-end: 9px;
 }
 
-h3 {
+h4 {
     font-weight: var(--main-text-font-weight);
     font-size: var(--main-text-font-size);
     color: var(--main-text-color);
@@ -195,4 +202,16 @@ p {
 .gallery-image {
     object-fit: cover;
     width: 100%;
+}
+
+.footer {
+    display: grid;
+    height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
+    min-height: 668px; /* меньше этого значения высоте быть нельзя*/
+    align-content: center;
+    justify-content: center;
+}
+
+.footer .decorated-title {
+    text-shadow: var(--footer-decorated-text-shadow);
 }

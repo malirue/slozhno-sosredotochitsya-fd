@@ -9,41 +9,39 @@
     /*общее*/
     --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
-    --accent-color: #FF8DCB;
-    --decor: hidden;
-    --visibility: false;
-     --link-text-shadow: 2px 2px #FF8DCB;
+    --accent-color: #ff8dcb;
+    /*ссылки*/
+    --link-text-shadow: 2px 2px var(--accent-color);
+    --link-outline-color: #353430;
+    /*декоративные элементы*/
+    --decorated-element-visibility: hidden;
+    --header-decorated-text-shadow: 4px 4px var(--accent-color);
+    --footer-decorated-text-shadow: 2px 2px var(--accent-color);
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
-    --text-shadow: 4px 4px var(--accent-color);
     --title-font-weight: 700;
     /*кнопки*/
-    
     --button-line-height: 18px;
     --button-border-color: #353430;
-    --button-outline-color: #32312D66;
+    --button-outline-color: #32312d66;
     --button-change-plase-outline: initial;
     /*стили header*/
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --title-line-height: 83%;
-    --title-text-color: #FFC2E6;
-    --subtitle-font-size: 18px;
-    --subtitle-line-height: 23.4px;
-    --subtitle-text-color: #353430;
-    /*основной текст yt ujnjd*/
+    --title-text-color: #ffc2e6;
+    /*основной текст*/
     --main-text-font-size: 18px;
     --main-text-font-weight: 400;
     --main-text-line-height: 23.4px;
-    --main-text-color: #000028;
+    --main-text-color: #353430;
     --content-section-title-text-color: #353430;
     --paragraph-text-color: #353430;
 
     .decorated {
-      display: none;
+        display: none;
     }
-
-    }
-    /* сохраните этот селектор в приведённом 
+}
+/* сохраните этот селектор в приведённом 
   виде.
   Так стили написанные ниже будут иметь 
   больший вес, чем стили в медиазапросе 
@@ -55,4 +53,3 @@
     /* Вам также нужно будет написать ряд 
   подобных селекторов 
 } */
-
