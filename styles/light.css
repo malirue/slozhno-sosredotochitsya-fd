@@ -12,6 +12,7 @@
     --accent-color: #FF8DCB;
     --decor: hidden;
     --visibility: false;
+     --link-text-shadow: 2px 2px #FF8DCB;
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
     --text-shadow: 4px 4px var(--accent-color);
@@ -48,7 +49,7 @@
   больший вес, чем стили в медиазапросе 
   предпочтений пользователя
   
-}*/
+}
 
 /* .theme-light .page {
     /* Вам также нужно будет написать ряд 

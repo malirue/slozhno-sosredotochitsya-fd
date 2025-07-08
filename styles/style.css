@@ -23,6 +23,26 @@
     background-color: var(--accent-color);
 }
 
+.link {
+  border: initial;
+  text-decoration: none;
+  text-shadow: var(--link-text-shadow);
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--paragraph-text-color);
+}
+
+.link:focus {
+  outline: initial;
+  outline: 1px solid var(--link-outline-color);
+}
+
+.link:focus-visible {
+  outline: initial;
+  outline: 1px solid var(--link-outline-color);
+}
+
 .header {
     display: grid;
     height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/

@@ -10,9 +10,11 @@
     --accent-color: #ff0070;
     --decor: visible;
     --visibility: true;
+    --link-text-shadow: 2px 2px #ff0070;
+    --link-outline-color: #F1B2CE;
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
-    --text-shadow: 4px 4px var(--accent-color);
+    --text-shadow: 2px 2px #ff0070;
     --title-font-weight: 700;
     /*кнопки*/
     --button-line-height: 18px;
