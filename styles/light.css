@@ -11,7 +11,6 @@
     --background-color: #fff1f7;
     --accent-color: #ff8dcb;
     /*ссылки*/
-    --link-text-shadow: 2px 2px var(--accent-color);
     --link-outline-color: #353430;
     /*декоративные элементы*/
     --decorated-element-visibility: hidden;

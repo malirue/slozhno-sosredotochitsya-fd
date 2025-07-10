@@ -23,7 +23,7 @@
 .link {
     border: initial;
     text-decoration: none;
-    text-shadow: var(--link-text-shadow);
+    text-shadow: 2px 2px var(--accent-color);
 }
 
 .link:hover {
