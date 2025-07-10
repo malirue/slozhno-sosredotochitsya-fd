@@ -56,6 +56,7 @@
     color: var(--title-text-color);
     text-shadow: var(--header-decorated-text-shadow);
     padding-inline-start: 10px;
+    margin-block-start: 20px;
 }
 
 /*декоративные уголки в header и footer*/
@@ -95,9 +96,13 @@
 .decorated-element {
     visibility: var(--decorated-element-visibility);
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     justify-self: flex-end;
     margin-block-start: 10px;
-    margin-inline-end: 19px;
+    margin-inline-end: 16px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -108,8 +113,15 @@
 }
 
 .decorated-element::after {
-    content: url(/images/Ellipse.png);
-    vertical-align: sub;
+    content: "";
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    margin-inline-end: 3px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px #ff0070;
 }
 
 /*остальные стили страницы*/
@@ -118,12 +130,12 @@
     display: grid;
     height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
     min-height: 668px; /* меньше этого значения высоте быть нельзя*/
-    align-content: stretch;
+    align-content: space-between;
     align-items: baseline;
 }
 
 .header__theme-menu {
-    margin-block-start: 75px;
+    margin-block-start: 73px;
 }
 
 .header__theme-menu-list {
@@ -135,6 +147,9 @@
 }
 
 .header__theme-menu-button {
+    display: flex;
+    width: 70px;
+    height: 26px;
     font-family: var(--font-family);
     font-weight: var(--main-text-font-weight);
     font-size: var(--main-text-font-size);
@@ -144,7 +159,8 @@
     background-color: transparent;
     border-style: none;
     line-height: 25px;
-    padding: 0 25px 0 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__theme-menu-button:hover {
@@ -155,9 +171,6 @@
     outline: initial;
     border-bottom: 1px solid var(--button-border-color);
     margin-bottom: -1px;
-    /*сделала отрицательный margin чтобы 
-  не прыгал, но не получилось возможно 
-  сработает при других условиях*/
 }
 
 .header__theme-menu-button:focus-visible {
@@ -178,6 +191,8 @@
     color: var(--main-text-color);
     margin-inline-start: 10px;
     margin-inline-end: 10px;
+    margin-block-start: 10px;
+    margin-block-end: 65px;
 }
 
 .content {
@@ -199,6 +214,7 @@
 .content__section-chapter {
     display: grid;
     flex-direction: column;
+    gap: 10px;
 }
 
 h2 {
@@ -211,15 +227,12 @@ h3 {
     font-weight: var(--title-font-weight);
     font-size: var(--main-text-font-size);
     color: var(--main-text-color);
-    margin-block-end: 9px;
 }
 
 h4 {
     font-weight: var(--main-text-font-weight);
     font-size: var(--main-text-font-size);
     color: var(--main-text-color);
-    /* margin-block-start: 10px; */
-    margin-block-end: 9px;
 }
 
 p {
@@ -232,6 +245,10 @@ p {
     grid-template-columns: 1fr;
     gap: 10px;
     width: 100%;
+}
+
+.gallery .title-decor {
+    margin-block-end: 0;
 }
 
 .gallery-image {
@@ -248,5 +265,8 @@ p {
 }
 
 .footer .decorated-title {
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
+    padding: 0;
     text-shadow: var(--footer-decorated-text-shadow);
 }
