@@ -14,6 +14,7 @@
     --decorated-element-visibility: visible;
     --header-decorated-text-shadow: 4px 4px var(--accent-color);
     --footer-decorated-text-shadow: 2px 2px var(--accent-color);
+    --decorated-rectangle-border-color: var(--accent-color);
     /*общая типографика*/
     --font-family: "IBM Plex Mono";
     --title-font-weight: 700;
