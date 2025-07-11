@@ -9,6 +9,10 @@
     --background-color: #000028;
     --accent-color: #ff0070;
     --link-outline-color: #f1b2ce;
+    --margin: 10px;
+    /* --margin-inline-end: 10px;
+    --margin-block-start: 10px;
+    --margin-block-end: 10px; */
     /*декоративные элементы*/
     --decorated-element-visibility: visible;
     --header-decorated-text-shadow: 4px 4px var(--accent-color);
@@ -33,4 +37,10 @@
     --main-text-color: #000028;
     --content-section-title-text-color: var(--accent-color);
     --paragraph-text-color: #f1b2ce;
+}
+
+@media (width<=768px) {
+    :root.theme-dark {
+        --margin: 20px;
+    }
 }
