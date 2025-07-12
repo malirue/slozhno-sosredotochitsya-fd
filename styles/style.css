@@ -31,12 +31,10 @@
 }
 
 .link:focus {
-    outline: initial;
     outline: 1px solid var(--link-outline-color);
 }
 
 .link:focus-visible {
-    outline: initial;
     outline: 1px solid var(--link-outline-color);
 }
 
