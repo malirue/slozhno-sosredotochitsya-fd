@@ -10,9 +10,6 @@
     --accent-color: #ff0070;
     --link-outline-color: #f1b2ce;
     --margin: 10px;
-    /* --margin-inline-end: 10px;
-    --margin-block-start: 10px;
-    --margin-block-end: 10px; */
     /*декоративные элементы*/
     --decorated-element-visibility: visible;
     --header-decorated-text-shadow: 4px 4px var(--accent-color);
@@ -28,6 +25,7 @@
     --button-change-plase-outline: 1px solid var(--button-border-color);
     /*стили header*/
     --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    /**/
     --title-line-height: 83%;
     --title-text-color: #db00ff;
     /*основной текст*/
@@ -39,8 +37,14 @@
     --paragraph-text-color: #f1b2ce;
 }
 
-@media (width<=768px) {
+@media (width>=768px) {
     :root.theme-dark {
         --margin: 20px;
+    }
+}
+
+@media (width>=1024px) {
+    :root.theme-dark {
+        --title-font-size: 157px;
     }
 }
