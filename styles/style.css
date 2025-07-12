@@ -329,15 +329,22 @@ p {
 
     .gallery {
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: (repeat(3, auto));
+        grid-template-rows: repeat(3, auto);
         grid-auto-flow: dense;
+        gap: 20px;
     }
 
-    /* .gallery-image:nth-child(1) {
-      grid-column: span 2;
+    .gallery-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .gallery-image:nth-child(2n){
-      grid-row: 2;
-    } */
+    .gallery-image_wide {
+        grid-column: span 2;
+    }
+
+    .gallery-image_slim {
+        grid-row: span 2;
+    }
 }
