@@ -10,35 +10,56 @@
     --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
     --accent-color: #ff8dcb;
-    /*ссылки*/
     --link-outline-color: #353430;
     /*декоративные элементы*/
     --decorated-element-visibility: hidden;
     --header-decorated-text-shadow: 4px 4px var(--accent-color);
     --footer-decorated-text-shadow: 2px 2px var(--accent-color);
     --decorated-rectangle-border-color: #353430;
-    /*общая типографика*/
-    --font-family: "IBM Plex Mono";
-    --title-font-weight: 700;
     /*кнопки*/
-    --button-line-height: 18px;
-    --button-border-color: #353430;
-    --button-outline-color: #32312d66;
-    --button-change-plase-outline: initial;
+    --bottom-text-color: var(--main-text-color);
+    --buttom-border-color: #353430;
+    --buttom-outline-color: #32312d66;
+    --buttom-change-plase-outline: 1px solid var(--buttom-border-color);
     /*стили header*/
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --title-line-height: 83%;
     --title-text-color: #ffc2e6;
     /*основной текст*/
-    --main-text-font-size: 18px;
-    --main-text-font-weight: 400;
-    --main-text-line-height: 23.4px;
     --main-text-color: #353430;
     --content-section-title-text-color: #353430;
     --paragraph-text-color: #353430;
 
     .decorated {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root.theme-auto {
+        /*общее*/
+        --background-image: url(../images/cover-image-light.png);
+        --background-color: #fff1f7;
+        --accent-color: #ff8dcb;
+        --link-outline-color: #353430;
+        /*декоративные элементы*/
+        --decorated-element-visibility: hidden;
+        --header-decorated-text-shadow: 4px 4px var(--accent-color);
+        --footer-decorated-text-shadow: 2px 2px var(--accent-color);
+        --decorated-rectangle-border-color: #353430;
+        /*кнопки*/
+        --bottom-text-color: var(--main-text-color);
+        --buttom-border-color: #353430;
+        --buttom-outline-color: #32312d66;
+        --buttom-change-plase-outline: 1px solid var(--buttom-border-color);
+        /*стили header*/
+        --title-text-color: #ffc2e6;
+        /*основной текст*/
+        --main-text-color: #353430;
+        --content-section-title-text-color: #353430;
+        --paragraph-text-color: #353430;
+
+        .decorated {
+            display: none;
+        }
     }
 }
 /* сохраните этот селектор в приведённом 

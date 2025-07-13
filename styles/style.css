@@ -1,11 +1,4 @@
-/* Основные стили проекта. Это стили для темы, 
-которую вы верстаете первой. */
-
 .page {
-    /* сохраните в разметке и стилях класс 
-  page у тега body. Он удобен, 
-  чтобы составлять селекторы для 
-  разных цветовых тем. */
     background-image: var(--background-image);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto-fit;
-    /* возможно потребуется заменить на auto-fill */
     gap: 40px;
 }
 
@@ -126,8 +118,8 @@
 
 .header {
     display: grid;
-    height: 100vh; /*растягиваем блок на всю высоту эrрана браузера*/
-    min-height: 668px; /* меньше этого значения высоте быть нельзя*/
+    height: 100vh;
+    min-height: 668px;
     align-content: space-between;
     align-items: baseline;
     justify-items: flex-end;
@@ -152,33 +144,34 @@
     font-family: var(--font-family);
     font-weight: var(--main-text-font-weight);
     font-size: var(--main-text-font-size);
-    line-height: var(--button-line-height);
-    color: var(--accent-color);
+    line-height: var(--buttom-line-height);
+    color: var(--bottom-text-color);
     text-align: center;
     background-color: transparent;
     border-style: none;
-    align-items: center;
     justify-content: center;
 }
 
 .header__theme-menu-button:hover {
-    outline: 1px solid var(--button-outline-color);
+    outline: 1px solid var(--buttom-outline-color);
 }
 
 .header__theme-menu-button:focus {
     outline: initial;
-    border-bottom: 1px solid var(--button-border-color);
+    border-bottom: 1px solid var(--buttom-border-color);
     margin-bottom: -1px;
 }
 
 .header__theme-menu-button:focus-visible {
     outline: initial;
-    border-bottom: 1px solid var(--button-border-color);
+    border-bottom: 1px solid var(--buttom-border-color);
     margin-bottom: -1px;
 }
 
-.header__theme-menu-button_type_dark {
-    outline: var(--button-change-plase-outline);
+.header__theme-menu-button_active {
+    outline: initial;
+    outline: var(--buttom-change-plase-outline);
+    pointer-events: none;
 }
 
 .header__title {
