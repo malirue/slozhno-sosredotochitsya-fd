@@ -169,7 +169,6 @@
 }
 
 .header__theme-menu-button_active {
-    outline: initial;
     outline: var(--buttom-change-plase-outline);
     pointer-events: none;
 }
