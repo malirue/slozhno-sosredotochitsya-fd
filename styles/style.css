@@ -126,7 +126,7 @@
 }
 
 .header__theme-menu {
-    margin-block-start: 73px;
+    margin-block-start: 75px;
 }
 
 .header__theme-menu-list {
@@ -201,11 +201,19 @@
     line-height: var(--main-text-line-height);
 }
 
+.content__section:nth-child(4) {
+    gap: 10px;
+}
+
 .content__section-chapter {
     display: grid;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
+
+/* .content__section-chapter {
+  
+} */
 
 .content__section-paragraph {
     display: grid;
@@ -317,6 +325,7 @@ p {
     }
 
     .gallery {
+        margin-block-start: 10px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
         grid-auto-flow: dense;
