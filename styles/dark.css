@@ -1,21 +1,24 @@
-/* зачем вообще нужен этот файл? */
 
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить
-  принудительно, переключая тему
-*/
-
-/* :root.theme-dark {
-    
-
-    /* сохраните этот селектор в приведённом виде.
-  Так стили написанные ниже будут иметь больший вес,
-  чем стили в медиазапросе предпочтений пользователя
-  
+:root {
+    /*общее*/
+    --background-image: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --accent-color: #ff0070;
+    --link-outline-color: #f1b2ce;
+    /*декоративные элементы*/
+    --decorated-element-visibility: visible;
+    --header-decorated-text-shadow: 4px 4px var(--accent-color);
+    --footer-decorated-text-shadow: 2px 2px var(--accent-color);
+    --decorated-rectangle-border-color: var(--accent-color);
+    /*кнопки*/
+    --bottom-text-color: var(--accent-color);
+    --buttom-border-color: var(--accent-color);
+    --buttom-outline-color: #ff007066;
+    --buttom-change-plase-outline: 1px solid var(--accent-color);
+    /*стили header*/
+    --title-text-color: #db00ff;
+    /*основной текст*/
+    --main-text-color: #000028;
+    --content-section-title-text-color: var(--accent-color);
+    --paragraph-text-color: #f1b2ce;
 }
-
-.theme-dark .page {
-    /* Вам также нужно будет написать 
-  ряд подобных селекторов 
-}*/
