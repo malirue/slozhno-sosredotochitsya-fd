@@ -151,6 +151,7 @@
     background-color: transparent;
     border-style: none;
     justify-content: center;
+    align-items: center;
 }
 
 .header__theme-menu-button:hover {
