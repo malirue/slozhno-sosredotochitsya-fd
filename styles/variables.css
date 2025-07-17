@@ -7,7 +7,7 @@
     /*общее*/
     --margin: 10px;
     /*общая типографика*/
-    --font-family: "IBM Plex Mono";
+    --font-family: "IBM Plex Mono", monospace;
     --title-font-weight: 700;
     /*кнопки*/
     --buttom-line-height: 18px;
@@ -17,7 +17,7 @@
     /*основной текст*/
     --main-text-font-size: 18px;
     --main-text-font-weight: 400;
-    --main-text-line-height: 23.4px;
+    --main-text-line-height: 130%;
 
     /*темная тема*/
     /*общее*/
@@ -51,6 +51,6 @@
 
 @media (width>=1024px) {
     :root {
-        --title-font-size: 157px;
+        --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
